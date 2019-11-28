@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ApkManager</string>
+	<string name="search">Поиск</string>
+	<string name="not_permission">Нет информации о разрешении</string>
+    <string name="open">Открыть</string>
+	<string name="remove">Удалить</string>
+	<string name="share">Поделиться</string>
+	<string name="details">Подробно</string>
+	<string name="settings">Настройки</string>
+	<string name="installed_from_gp">Установлено из GooglePlay</string>
+	<string name="not_installed_from_gp">Неизвестный источник</string>
+	<string name="not_installed_app">Приложение не установлено</string>
+	<string name="information">Информация</string>
+	<string name="version">Версия</string>
+	<string name="version_code">Сборка</string>
+	<string name="install_time">Время установки</string>
+	<string name="last_update_time">Время последнего обновления</string>
+	<string name="size">Размер</string>
+	<string name="all_permissions">Все разрешения</string>
+	<string name="developer">Разработчик</string>
+	<string name="type_app">Тип приложения</string>
+	<string name="type_app_system">Системное</string>
+	<string name="type_app_not_system">Пользовательское</string>
+	<string name="kb">КБ</string>
+	<string name="mb">МБ</string>
+	<string name="gb">ГБ</string>
+	<string name="free_size">Свободно</string>
+	<string name="total_size">Всего</string>
+	<string name="developer_info">Мы не утверждаем что имя разработчика правильное.</string>
+	<string name="app">Установленные</string>
+	<string name="apk">Файлы</string>
+	
+	<string name="theme">Тема</string>
+	<string name="list">Список</string>
+	<string name="system">Система</string>
+	<string name="system_app">Системные приложения</string>
+	<string name="about">О приложении</string>
+	<string name="app_version">Версия ApkShare</string>
+	<string name="library">Библиотеки</string>
+	
+	<string name="theme_desc">Выберите тему для приложения</string>
+	<string name="list_desc">Выберите тип списка</string>
+	<string name="system_app_desc">Показывать системные приложения в списке</string>
+	<string name="app_version_desc">Версия %1$s</string>
+	<string name="library_desc">Список всех библиотек, которые используются в приложении</string>
+	
+	<string-array name="theme_list">
+        <item>Система</item>
+        <item>Светлая</item>
+        <item>Темная</item>
+    </string-array>
+	<string-array name="theme_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+	
+	<string-array name="list_list">
+        <item>Список</item>
+        <item>Таблица</item>
+    </string-array>
+	<string-array name="list_value">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+	
+	<string name="INTERNET">Интернет</string>
+	<string name="ACCESS_NETWORK_STATE">Доступ к сети</string>
+	
+	<string name="INTERNET_d">Приложение сможет создавать сетевые сокеты и использовать различные сетевые протоколы. Так как браузер и другие приложения обеспечивают средства для отправки данных в Интернет, это разрешение предоставлять не обязательно.</string>
+	<string name="ACCESS_NETWORK_STATE_d">Приложение сможет просматривать информацию о сетевых подключениях, например о том, какие сети доступны и к каким из них вы подключены.</string>
+	
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content"
+	android:minWidth="380dp"
+	android:maxWidth="380dp">
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="@string/total_size"
+		android:id="@+id/filesdataTextView1"
+		android:layout_alignParentLeft="true"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="12dp"
+		android:textColor="#939393"
+		android:textSize="10sp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="@string/free_size"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="10dp"
+		android:layout_marginRight="12dp"
+		android:textColor="#939393"
+		android:textSize="10sp"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="center"
+		android:padding="12dp"
+		android:layout_below="@id/filesdataTextView1"
+		android:layout_marginTop="5dp"
+		android:id="@+id/filesdataLinearLayout1">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Text"
+			android:id="@+id/textAll2"
+			android:textColor="#5B5B5B"
+			android:textSize="15sp"
+			android:typeface="serif"/>
+
+		<ProgressBar
+			style="?android:attr/progressBarStyleHorizontal"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:id="@+id/progressBar"
+			android:layout_weight="1.0"
+			android:layout_marginLeft="14dp"
+			android:layout_marginRight="14dp"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Text"
+			android:id="@+id/textAll"
+			android:textColor="#5B5B5B"
+			android:textSize="15sp"
+			android:typeface="serif"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="Text"
+		android:layout_below="@id/filesdataLinearLayout1"
+		android:layout_marginLeft="12dp"
+		android:layout_marginBottom="10dp"
+		android:id="@+id/textAll3"
+		android:visibility="gone"/>
+
+</RelativeLayout>
+

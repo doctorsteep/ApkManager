@@ -1,0 +1,82 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<android.support.design.widget.CoordinatorLayout
+		android:id="@+id/main_content"
+		android:layout_weight="1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<android.support.design.widget.AppBarLayout
+			app:elevation="0dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			
+			<RelativeLayout
+				android:id="@+id/bar"
+				android:background="?attr/colorPrimary"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingBottom="20dp"
+				app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+				<include
+					android:id="@+id/viewinclude"
+					layout="@layout/cont_main"/>
+				
+				<android.support.design.widget.TabLayout
+					android:id="@+id/tab_layout"
+					android:layout_width="wrap_content"
+					android:layout_height="36dp"
+					android:layout_below="@+id/viewinclude"
+					android:background="@drawable/tab_b"
+					app:elevation="0dp"
+					app:tabGravity="fill"
+					app:tabMode="scrollable"
+					app:tabBackground="@drawable/tab_l_s"
+					app:tabTextAppearance="@style/tabText"
+					android:layout_marginLeft="15dp"
+					android:layout_marginRight="15dp"
+					android:minHeight="36dp"
+					app:tabPaddingStart="16dp"
+					app:tabPaddingEnd="16dp"
+					app:tabIndicatorColor="@null"
+					app:tabIndicatorHeight="0dp"
+					app:tabTextColor="#B8B8B8"
+					app:tabSelectedTextColor="#ffffff"/>
+				
+				<ImageView
+					android:layout_height="36dp"
+					android:layout_width="36dp"
+					android:src="@drawable/ic_settings"
+					android:layout_alignParentRight="true"
+					android:layout_below="@+id/viewinclude"
+					android:padding="5dp"
+					android:tint="#9E9E9E"
+					android:layout_marginRight="15dp"
+					android:id="@+id/ImageSettings"/>
+				
+			</RelativeLayout>
+
+		</android.support.design.widget.AppBarLayout>
+
+		<RelativeLayout
+			app:layout_behavior="@string/appbar_scrolling_view_behavior"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<android.support.v4.view.ViewPager
+				android:id="@+id/viewPager"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1.0"/>
+
+		</RelativeLayout>
+
+	</android.support.design.widget.CoordinatorLayout>
+	
+</LinearLayout>

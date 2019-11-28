@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+	<PreferenceCategory
+		android:key="systemCategory"
+		android:title="@string/system">
+	
+		<ListPreference
+			android:entries="@array/theme_list"
+			android:entryValues="@array/theme_value"
+			android:key="themeKey"
+			android:defaultValue="1"
+			android:dialogTitle="@string/theme_desc"
+			android:summary="@string/theme_desc"
+			android:title="@string/theme"/>
+		
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		android:key="listCategory"
+		android:title="@string/list">
+		
+		<SwitchPreference
+			android:key="sysAppKey"
+			android:defaultValue="false"
+			android:title="@string/system_app"
+			android:summary="@string/system_app_desc"/>
+		
+		<ListPreference
+			android:entries="@array/list_list"
+			android:entryValues="@array/list_value"
+			android:key="listKey"
+			android:defaultValue="1"
+			android:dialogTitle="@string/list_desc"
+			android:summary="@string/list_desc"
+			android:title="@string/list"/>
+		
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		android:key="aboutCategory"
+		android:title="@string/about">
+
+		<PreferenceScreen
+			android:key="libraryScreen"
+			android:title="@string/library"
+			android:summary="@string/library_desc"/>
+		
+		<PreferenceScreen
+			android:key="versionScreen"
+			android:title="@string/app_version"
+			android:summary="@string/app_version_desc"/>
+
+	</PreferenceCategory>
+	
+</PreferenceScreen>

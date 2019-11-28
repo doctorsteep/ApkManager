@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/scroll"
+	style="@style/scrollbarStyle"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent">
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="center"
+				android:maxWidth="380dp"
+				android:layout_marginBottom="15dp">
+
+				<LinearLayout
+					style="@style/linItemInfoBar"
+					android:id="@+id/linAppSize">
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						style="@style/textValueInfoBar"
+						android:id="@+id/size"/>
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:text="@string/size"
+						style="@style/textNameInfoBar"/>
+
+				</LinearLayout>
+				
+				<LinearLayout
+					style="@style/linItemInfoBar">
+					
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						style="@style/textValueInfoBar"
+						android:id="@+id/versionName"/>
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:text="@string/version"
+						style="@style/textNameInfoBar"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					style="@style/linItemInfoBar">
+					
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						style="@style/textValueInfoBar"
+						android:id="@+id/versionCode"/>
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:text="@string/version_code"
+						style="@style/textNameInfoBar"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="50dp"
+				android:layout_width="match_parent"
+				style="@style/linItemInfo">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:text="@string/install_time"
+					style="@style/textNameInfo"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					style="@style/textValueInfo"
+					android:id="@+id/installTime"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="50dp"
+				android:layout_width="match_parent"
+				style="@style/linItemInfo">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:text="@string/last_update_time"
+					style="@style/textNameInfo"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					style="@style/textValueInfo"
+					android:id="@+id/lastUpdateTime"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="50dp"
+				android:layout_width="match_parent"
+				style="@style/linItemInfo">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:text="@string/type_app"
+					style="@style/textNameInfo"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					style="@style/textValueInfo"
+					android:id="@+id/type_app"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="50dp"
+				android:layout_width="match_parent"
+				style="@style/linItemInfo">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:text="@string/developer"
+					style="@style/textNameInfo"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					style="@style/textValueInfo"
+					android:id="@+id/developer"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="vertical"
+				android:layout_margin="8dp"
+				android:background="@drawable/round_vall"
+				android:id="@+id/linI1">
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="horizontal"
+					android:background="?android:attr/dividerVertical"
+					android:padding="15dp"
+					android:alpha="0.5">
+
+					<ImageView
+						android:layout_height="19dp"
+						android:layout_width="19dp"
+						android:tint="?android:textColorPrimary"
+						android:src="@drawable/ic_info"/>
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="@string/developer_info"
+						android:textSize="12sp"
+						android:layout_marginLeft="10dp"
+						android:textColor="?android:textColorPrimary"
+						android:id="@+id/textI1"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+</ScrollView>
+

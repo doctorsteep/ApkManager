@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/card_view"
+	android:background="?android:attr/selectableItemBackground"
+	android:clickable="true"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:id="@+id/imageview"
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:src="@drawable/ic_launcher"
+			android:layout_marginTop="9dp"
+			android:layout_marginLeft="9dp"/>
+
+		<TextView
+			android:id="@+id/Apk_Name"
+			android:layout_toRightOf="@id/imageview"
+			android:layout_toEndOf="@id/imageview"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_marginTop="14dp"
+			android:layout_marginLeft="10dp"
+			android:typeface="serif"
+			android:textSize="16sp"/>
+
+		<TextView
+			android:id="@+id/Apk_Package_Name"
+			android:layout_below="@id/Apk_Name"
+			android:layout_toEndOf="@id/imageview"
+			android:layout_toRightOf="@id/imageview"
+			android:layout_width="wrap_content"
+			android:layout_height="21dp"
+			android:layout_marginLeft="10dp"
+			android:textColor="#AFAFAF"
+			android:layout_marginTop="4dp"
+			android:textSize="12sp"
+			android:gravity="center"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			android:background="@drawable/tab_b"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:textColor="#828282"
+			android:id="@+id/App_Developer"
+			android:layout_below="@id/Apk_Package_Name"
+			android:layout_toEndOf="@id/imageview"
+			android:layout_toRightOf="@id/imageview"
+			android:layout_marginTop="4dp"
+			android:layout_marginLeft="10dp"
+			android:textSize="13sp"
+			android:layout_marginBottom="10dp"/>
+
+		<ImageView
+			android:layout_height="21dp"
+			android:layout_width="21dp"
+			android:src="@drawable/ic_installed_app_in_google_play"
+			android:layout_marginRight="15dp"
+			android:tint="#ffffff"
+			android:id="@+id/InstallegInGooglePlay"
+			android:padding="4dp"
+			android:layout_below="@id/Apk_Name"
+			android:layout_toRightOf="@id/Apk_Package_Name"
+			android:layout_marginTop="4dp"
+			android:layout_marginLeft="7dp"
+			android:background="@drawable/tab_s"/>
+
+	</RelativeLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<style name="Theme.AppCompat.DayNight" parent="Theme.AppCompat.NoActionBar">
+		<item name="colorPrimary">#202124</item>
+		<item name="colorPrimaryDark">#202124</item>
+		<item name="colorAccent">#FF355C</item>
+		<item name="android:windowBackground">@color/bkgDark</item>
+		<item name="android:windowLightStatusBar">false</item>
+	</style>
+	
+</resources>

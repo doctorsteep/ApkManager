@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/card_view"
+	android:background="@drawable/round_back_item"
+	android:clickable="true"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_margin="6dp"
+	android:elevation="4dp">
+
+	<RelativeLayout
+		android:layout_width="125dp"
+		android:layout_height="220dp">
+
+		<ImageView
+			android:id="@+id/imageview"
+			android:layout_width="105dp"
+			android:layout_height="105dp"
+			android:src="@drawable/ic_launcher"
+			android:layout_marginTop="12dp"
+			android:background="@drawable/round_icon"
+			android:elevation="2dp"
+			android:layout_marginLeft="10dp"/>
+
+		<TextView
+			android:id="@+id/Apk_Name"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_marginTop="5dp"
+			android:layout_marginLeft="10dp"
+			android:typeface="serif"
+			android:textSize="14sp"
+			android:layout_below="@id/imageview"
+			android:layout_marginRight="12dp"
+			android:gravity="top|left"
+			android:minLines="2"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:textColor="#828282"
+			android:id="@+id/App_Developer"
+			android:layout_below="@id/Apk_Name"
+			android:layout_marginTop="4dp"
+			android:layout_marginLeft="10dp"
+			android:textSize="12sp"
+			android:typeface="sans"
+			android:gravity="top|left"
+			android:layout_marginRight="12dp"
+			android:singleLine="true"/>
+
+		<TextView
+			android:id="@+id/Apk_Package_Name"
+			android:layout_below="@id/App_Developer"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:textColor="#AFAFAF"
+			android:layout_marginTop="4dp"
+			android:typeface="sans"
+			android:textSize="10sp"
+			android:layout_marginBottom="10dp"
+			android:layout_marginRight="12dp"
+			android:gravity="top|left"
+			android:singleLine="true"/>
+
+		<ImageView
+			android:layout_height="17dp"
+			android:layout_width="17dp"
+			android:src="@drawable/ic_installed_app_in_google_play"
+			android:layout_marginRight="3dp"
+			android:tint="?attr/colorAccent"
+			android:id="@+id/InstallegInGooglePlay"
+			android:padding="2dp"
+			android:layout_alignParentRight="true"
+			android:layout_marginTop="3dp"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="7dp"/>
+
+	</RelativeLayout>
+
+</LinearLayout>
+

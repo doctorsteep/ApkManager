@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/scrollbarStyle"
+	android:background="@drawable/rounded_dialog"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent">
+
+	<RelativeLayout
+		android:layout_height="match_parent"
+		android:layout_width="wrap_content"
+		android:maxWidth="350dp">
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:id="@+id/good"
+			android:paddingBottom="20dp">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:gravity="center_horizontal">
+
+				<ImageView
+					android:layout_height="67dp"
+					android:layout_width="67dp"
+					android:src="@drawable/ic_launcher"
+					android:layout_centerHorizontal="true"
+					android:layout_marginTop="50dp"
+					android:id="@+id/icon"
+					android:scaleType="centerCrop"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_below="@id/icon"
+					android:layout_centerHorizontal="true"
+					android:layout_marginTop="8dp"
+					android:id="@+id/name"
+					android:textSize="16sp"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:typeface="serif"
+					android:maxLines="2"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="@string/installed_from_gp"
+					android:textColor="#FFFFFF"
+					android:layout_below="@id/name"
+					android:id="@+id/textInstalledGooglePlay"
+					android:layout_centerHorizontal="true"
+					android:layout_marginTop="8dp"
+					android:textSize="12sp"
+					android:gravity="center"
+					android:paddingLeft="10dp"
+					android:paddingRight="10dp"
+					android:paddingTop="3dp"
+					android:paddingBottom="3dp"
+					android:background="@drawable/tab_s"/>
+
+				<View
+					android:background="?android:attr/dividerVertical"
+					android:layout_height="1dp"
+					android:layout_width="match_parent"
+					android:layout_below="@id/textInstalledGooglePlay"
+					android:id="@+id/appmenuView1"
+					android:layout_marginTop="30dp"
+					android:layout_marginBottom="20dp"/>
+
+				<include
+					android:id="@+id/app_menuinclude"
+					android:layout_below="@id/appmenuView1"
+					layout="@layout/menu_img_app"
+					android:layout_marginBottom="0dp"/>
+
+			</LinearLayout>
+
+			<ImageView
+				android:layout_height="70dp"
+				android:layout_width="70dp"
+				android:src="@drawable/ic_google_play"
+				android:layout_alignParentRight="true"
+				android:padding="23dp"
+				android:tint="#9E9E9E"
+				android:background="?android:attr/selectableItemBackgroundBorderless"
+				android:id="@+id/ImageSearchInGooglePlay"/>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_height="150dp"
+			android:layout_width="match_parent"
+			android:id="@+id/notI"
+			android:layout_alignParentBottom="true">
+
+			<ImageView
+				android:layout_height="50dp"
+				android:layout_width="50dp"
+				android:src="@drawable/img_nlo"
+				android:id="@+id/appmenuImageView1"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="@string/not_installed_app"
+				android:layout_below="@id/appmenuImageView1"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:textSize="13sp"
+				android:layout_marginTop="7dp"/>
+
+		</RelativeLayout>
+
+	</RelativeLayout>
+
+</ScrollView>
+
